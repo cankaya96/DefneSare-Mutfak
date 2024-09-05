@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mağaza Adresleri</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            margin: 0;
+            background-color: #f4f4f4;
+        }
+        .store-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .store {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 10px;
+            width: 300px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .store img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        .store h2 {
+            font-size: 1.5em;
+            margin: 10px 0;
+        }
+        .store a {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 20px;
+            background-color: #28a745;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .store a:hover {
+            background-color: #218838;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .store {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Mağazalarımız</h1>
+    <div class="store-list">
+        <!-- Mağaza 1 -->
+        <div class="store">
+            <img src="./Şubeler Image/Umraniye-1.jpeg" alt="Ümraniye - 1">
+            <h2>DefneSare Mutfak Ümraniye Şube - 1</h2>
+            <p>Altınşehir, Şenel Cd. no:77/b, 34775 Ümraniye/İstanbul</p>
+            <a href="https://maps.app.goo.gl/Nns2ACQ117E8xnkLA" target="_blank">Haritada Gör</a>
+        </div>
+
+        <!-- Mağaza 2 -->
+        <div class="store">
+            <img src="https://via.placeholder.com/300x200" alt="Mağaza 2">
+            <h2>Mağaza 2</h2>
+            <p>Bağdat Caddesi No:20, İstanbul</p>
+            <a href="https://www.google.com/maps/search/?api=1&query=Bağdat+Caddesi+No:20+İstanbul" target="_blank">Haritada Gör</a>
+        </div>
+
+        <!-- Mağaza 3 -->
+        <div class="store">
+            <img src="https://via.placeholder.com/300x200" alt="Mağaza 3">
+            <h2>Mağaza 3</h2>
+            <p>Kızılay Meydanı No:5, Ankara</p>
+            <a href="https://www.google.com/maps/search/?api=1&query=Kızılay+Meydanı+No:5+Ankara" target="_blank">Haritada Gör</a>
+        </div>
+
+    </div>
+
+</body>
+</html>
