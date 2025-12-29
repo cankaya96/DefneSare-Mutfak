@@ -7,15 +7,45 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            padding: 20px;
+            padding: 0;
             margin: 0;
             background-color: #f4f4f4;
         }
+
+        /* ÜST DUYURU ALANI */
+        .top-banner {
+            background-color: #222;
+            color: #fff;
+            text-align: center;
+            padding: 20px 10px;
+        }
+
+        .top-banner h2 {
+            margin: 0 0 10px;
+            font-size: 20px;
+        }
+
+        .top-banner a {
+            display: inline-block;
+            background-color: #28a745;
+            color: #fff;
+            padding: 10px 25px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .top-banner a:hover {
+            background-color: #218838;
+        }
+
         .store-list {
             display: flex;
             flex-wrap: wrap;
             justify-content: space-around;
+            padding: 20px;
         }
+
         .store {
             background-color: white;
             border: 1px solid #ddd;
@@ -26,15 +56,18 @@
             text-align: center;
             box-shadow: 0 4px 8px rgba(0,0,0,0.1);
         }
+
         .store img {
             max-width: 100%;
             height: auto;
             border-radius: 8px;
         }
+
         .store h2 {
-            font-size: 1.5em;
+            font-size: 1.4em;
             margin: 10px 0;
         }
+
         .store a {
             display: inline-block;
             margin-top: 10px;
@@ -44,11 +77,11 @@
             text-decoration: none;
             border-radius: 5px;
         }
+
         .store a:hover {
             background-color: #218838;
         }
 
-        /* Responsive Design */
         @media (max-width: 768px) {
             .store {
                 width: 100%;
@@ -56,83 +89,91 @@
         }
     </style>
 </head>
+
 <body>
 
-    <h1>Mağazalarımız</h1>
+    <!-- ÜST DUYURU -->
+    <div class="top-banner">
+        <h2>İSTANBUL DIŞI SATIŞLARIMIZ İÇİN</h2>
+        <a href="https://www.defnesaremutfak.com" target="_blank">
+            www.defnesaremutfak.com
+        </a>
+    </div>
+
+    <h1 style="text-align:center; margin-top:20px;">Mağazalarımız</h1>
+
     <div class="store-list">
-        <!-- Mağaza 1 -->
+
         <div class="store">
             <img src="Şubeler Image/Sultangazi.jpeg" alt="Merkez Şube">
             <h2>Merkez Şube</h2>
             <p>50.yıl Mah. 2095 sokak. No:27/B Sultangazi/İstanbul</p>
             <a href="https://maps.app.goo.gl/AqzZczFjt93kMgv57" target="_blank">Haritada Gör</a>
         </div>
-        <!-- Mağaza 2 -->
+
         <div class="store">
-            <img src="Şubeler Image/Umraniye-1.jpeg" alt="Ümraniye - 1">
+            <img src="Şubeler Image/Umraniye-1.jpeg" alt="Ümraniye">
             <h2>Şube-1: Ümraniye</h2>
             <p>Altınşehir, Şenel Cd. no:77/b, 34775 Ümraniye/İstanbul</p>
-            <p>İletişim tel: 05322544047</p>
+            <p>İletişim: 05322544047</p>
             <a href="https://maps.app.goo.gl/1ZhVgxtKDAq5riep9" target="_blank">Haritada Gör</a>
         </div>
-        <!-- Mağaza 3 -->
+
         <div class="store">
             <img src="Şubeler Image/Esenyurt.jpeg" alt="Esenyurt">
             <h2>Şube-2: Esenyurt</h2>
-            <p>Güzelyurt Mah. Ertuğrul gazi Caddesi. No:25 Esenyurt/İstanbul</p>
-            <p>İletişim tel: 05355479373</p>
+            <p>Güzelyurt Mah. Ertuğrul gazi Cd. No:25 Esenyurt</p>
+            <p>İletişim: 05355479373</p>
             <a href="https://maps.app.goo.gl/n6PY59dVacMEMzQh8" target="_blank">Haritada Gör</a>
         </div>
-        <!-- Mağaza 4 -->
+
         <div class="store">
             <img src="Şubeler Image/Bagcilar.jpeg" alt="Bağcılar">
             <h2>Şube-3: Bağcılar</h2>
-            <p>Merkez Mah. Güngören Caddesi No:5/B Bağcılar/İstanbul</p>
-            <p>İletişim tel: 05010663202</p>
+            <p>Merkez Mah. Güngören Cd. No:5/B</p>
+            <p>İletişim: 05010663202</p>
             <a href="https://maps.app.goo.gl/yvyZN6efeVLAYpTk7" target="_blank">Haritada Gör</a>
         </div>
-        <!-- Mağaza 5 -->
+
         <div class="store">
             <img src="Şubeler Image/Esenler.jpeg" alt="Esenler">
             <h2>Şube-4: Esenler</h2>
-            <p>Fevziçakmak mahallesi, Şahinbey Cd. no:6/b, 34220 Atışalanı/Esenler/İstanbul</p>
-            <p>İletişim tel: 05379787744</p>
+            <p>Fevziçakmak Mah. Şahinbey Cd. No:6/B</p>
+            <p>İletişim: 05379787744</p>
             <a href="https://maps.app.goo.gl/YwubXxct5uSRnD8N8" target="_blank">Haritada Gör</a>
         </div>
-        <!-- Mağaza 6 -->
+
         <div class="store">
             <img src="Şubeler Image/Sefakoy.jpeg" alt="Sefaköy">
             <h2>Şube-5: Sefaköy</h2>
-            <p>Kartaltepe Mah. 2.Namık kemal Cad.No:31/A Sefaköy/İstanbul (Küçükçekmece kaymakamlığının arka caddesi)</p>
-            <p>İletişim tel: 05368374884</p>
+            <p>Kartaltepe Mah. 2. Namık Kemal Cd. No:31/A</p>
+            <p>İletişim: 05368374884</p>
             <a href="https://maps.app.goo.gl/NdrM6Gi3QJqKuunU8" target="_blank">Haritada Gör</a>
         </div>
-        <!-- Mağaza 7 -->
+
         <div class="store">
             <img src="Şubeler Image/Kagithane.jpeg" alt="Kağıthane">
             <h2>Şube-6: Kağıthane</h2>
-            <p>Sultan Selim Mahallesi, Gümüşhane Caddesi, no32/b KÂĞITHANE/İstanbul</p>
-            <p>İletişim tel: 05304420316</p>
-            <a href="https://maps.app.goo.gl/UXzNY99zs19REXJJ7?g_st=ipc" target="_blank">Haritada Gör</a>
+            <p>Sultan Selim Mah. Gümüşhane Cd. No:32/B</p>
+            <p>İletişim: 05304420316</p>
+            <a href="https://maps.app.goo.gl/UXzNY99zs19REXJJ7" target="_blank">Haritada Gör</a>
         </div>
-        <!-- Mağaza 8 -->
+
         <div class="store">
             <img src="Şubeler Image/pendik.jpeg" alt="Pendik">
             <h2>Şube-7: Pendik</h2>
-            <p>Fevzi çakmak Caddesi. Sefir sokak. No:3/A Üst kaynarca. PENDİK (Kapalı cadde)</p>
-            <p>İletişim tel: 05322544047</p>
-            <a href="https://maps.app.goo.gl/zqFosbJayrdm5Gud9?g_st=iw" target="_blank">Haritada Gör</a>
+            <p>Fevzi Çakmak Cd. Sefir Sk. No:3/A</p>
+            <p>İletişim: 05322544047</p>
+            <a href="https://maps.app.goo.gl/zqFosbJayrdm5Gud9" target="_blank">Haritada Gör</a>
         </div>
 
-        <!-- Mağaza 9 -->
         <div class="store">
             <img src="Şubeler Image/FATIH.jpeg" alt="Fatih">
             <h2>Şube-8: Fatih</h2>
-            <p>Hırka-i şerif mahallesi tahtacılar sokak No:1 FATİH</p>
-            <p>İletişim tel: 05015324432</p>
+            <p>Hırka-i Şerif Mah. Tahtacılar Sk. No:1</p>
+            <p>İletişim: 05015324432</p>
             <a href="https://maps.app.goo.gl/BHpiDT511XViYcFx9" target="_blank">Haritada Gör</a>
         </div>
-
 
     </div>
 
